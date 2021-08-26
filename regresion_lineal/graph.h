@@ -25,7 +25,7 @@ void grafDisp(float x[], float y[], int n) {
 
     fprintf(fp, "plt.scatter(x,y)\n");
     fprintf(fp, "plt.savefig(\"Dispersion.png\")\n");
-    fclose ( fp );
+    fclose (fp);
     system("python3 disp.py");
     system("rm disp.py");
 
@@ -57,7 +57,7 @@ void grafLineRegression(float a , float b, float x[], int n) {
     fprintf(fp, "%f ]\n", g[n-1]);
     fprintf(fp, "plt.plot(x)\n");
     fprintf(fp, "plt.savefig(\"Regresion.png\")\n");
-    fclose ( fp );
+    fclose (fp);
     system("python3 line2.py");
     system("rm line2.py");
 
